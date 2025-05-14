@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myths</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: url("C:/Users/Administrator/Desktop/website/m_bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      color: #333;
+    }
+
+    /* Blur effect for background */
+   /* Blur effect for the entire screen */
+body::before {
+  content: "";
+  position: fixed; /* Covers entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(5px); /*Adjust blur intensity */
+  z-index: -1;
+}
+
+    header {
+      text-align: center;
+      background: rgba(108, 92, 231, 0.8); /* Semi-transparent overlay */
+      color: white;
+      padding: 20px 0;
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+      border-radius: 10px;
+    }
+
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .nav-row a {
+      background: #6c5ce7;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .nav-row a:hover {
+      background: #5a4db2;
+    }
+
+    .home-tab {
+      text-align: center;
+      background: #6c5ce7;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .home-tab:hover {
+      background: #5a4db2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Myths</h1>
+  </header>
+  <div class="content">
+    <p>
+      Myths are old stories that people used to tell to explain things like how the world was made, why the sun shines, or why people do certain things. These stories often have gods, magical creatures, or heroes in them.
+    </p>
+    <p>
+      Mythological stories are the stories from myths. They are not usually real, but people believed them a long time ago. They helped explain things before science existed and also taught lessons about right and wrong.
+    </p>
+  </div>
+
+  <!-- Navigation Tabs -->
+  <div class="navigation">
+    <div class="nav-row">
+      <a href="ganesha.html">The Birth of Ganesha</a>
+      <a href="samudra.html">The Churning of the Ocean</a>
+      <a href="ganga.html">The Story of Ganga's Descent</a>
+    </div>
+    <div class="nav-row">
+      <a href="hanuman.html">The Devotion of Hanuman</a>
+      <a href="arjuna.html">The Story of Arjuna and the Fish's Eye</a>
+      <a href="shabari.html">The Story of Rama and Shabari</a>
+    </div>
+    <a href="index.html" class="home-tab">Back to Home</a>
+  </div>
+</body>
+</html>

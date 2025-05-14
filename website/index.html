@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeless Tales</title>
+  <style>
+    /* General Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url("bg_1.jpg") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Slight Blur Background Effect */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      filter: blur(3px); /* Subtle blur */
+      z-index: -1;
+    }
+
+    /* Gradient Background for Title & Quote Boxes */
+    .gradient-box {
+  background: linear-gradient(to bottom right, rgba(220, 220, 250, 0.95), rgba(200, 200, 230, 0.9));
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 20px; /* Adds space between boxes */
+}
+
+    .title-box h2 {
+      font-size: 1.8rem;
+      margin: 0;
+      background: linear-gradient(to right, #6c5ce7, #ff6ec7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: normal;
+    }
+
+    .title-box h1 {
+      font-size: 2.8rem;
+      margin: 10px 0 0;
+      background: linear-gradient(to right, #6c5ce7, #ff6ec7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+
+    /* Gradient Text Styling for Quote */
+    .quote-box {
+      font-family: "Courier New", monospace;
+      font-size: 1.5rem;
+      text-align: center;
+      font-style: italic;
+      margin: 20px 0;
+      background: linear-gradient(to right, #6c5ce7, #ff6ec7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Tabs Container Styling */
+    .tabs-container {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .tab {
+      background: #6c5ce7;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .tab:hover {
+      background: #5a4db2;
+    }
+  </style>
+</head>
+<body>
+  <!-- Title Section -->
+  <div class="gradient-box title-box">
+    <h2>Welcome to</h2>
+    <h1>Timeless Tales</h1>
+  </div>
+
+  <!-- Quote Section -->
+  <div class="gradient-box">
+    <p class="quote-box"><strong>“Step into the timeless tales where gods walked among mortals, heroes rose against darkness, and legends etched their mark on the stars.”</strong></p>
+  </div>
+
+  <!-- Tabs/Navigation Section -->
+  <div class="tabs-container">
+    <a href="myths.html" class="tab">Myths</a>
+    <a href="legends.html" class="tab">Legends</a>
+    <a href="folklore.html" class="tab">Folklore</a>
+    <a href="contact.html" class="tab">Contact</a>
+  </div>
+</body>
+</html>
